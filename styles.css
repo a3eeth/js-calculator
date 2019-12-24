@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #CED1E0;
+}
+div#calc {
+  background: grey;
+  height: 80vh;
+  width: 80%;
+  border: 1px solid grey;
+  margin: 5vh auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px;
+}
+div#screen {
+  border: 1px solid black;
+  width: 90%;
+  height: 20vh;
+  margin: 5vh auto;
+  border-radius: 10px;
+  background: black;
+/*   overflow-y: scroll;
+  overflow-x: hidden; */
+}
+div.output {
+  color: #39ff14;
+  font-size: 30px;
+  margin: 5vh;
+}
+div.history {
+  color: red;
+  font-size: 20px;
+  margin: 3vh
+}
+div#keypad {
+  border: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+  height: 45vh;
+  border-radius: 10px;
+  background: #D3D3D3;
+  
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+/* button:nth-child(4n),
+button:nth-child(4n-7){
+  background: red;
+} */
+button {
+  background: #333333;
+  /* width: 90%; */
+  color: white;
+  border: 1px solid black;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+button:hover {
+  color: #39ff14;
+}
+button:nth-child(1) {
+  border-radius: 10px 0 0 0;
+}
+button:nth-child(4) {
+  border-radius: 0 10px 0 0;
+}
+button:nth-child(13) {
+  border-radius: 0 0 0 10px;
+}
+button:nth-child(16) {
+  border-radius: 0 0 10px 0;
+}
